@@ -14,6 +14,12 @@
 		B06D980E1DE0CF0D0078A331 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B06D980C1DE0CF0D0078A331 /* LaunchScreen.storyboard */; };
 		B06D98191DE0CF0D0078A331 /* AnimationWebViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06D98181DE0CF0D0078A331 /* AnimationWebViewTests.swift */; };
 		B06D98241DE0CF0D0078A331 /* AnimationWebViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06D98231DE0CF0D0078A331 /* AnimationWebViewUITests.swift */; };
+		B06D98381DE0CFCB0078A331 /* animate.js in Resources */ = {isa = PBXBuildFile; fileRef = B06D98321DE0CFCB0078A331 /* animate.js */; };
+		B06D98391DE0CFCB0078A331 /* canvasRender.js in Resources */ = {isa = PBXBuildFile; fileRef = B06D98331DE0CFCB0078A331 /* canvasRender.js */; };
+		B06D983A1DE0CFCB0078A331 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = B06D98341DE0CFCB0078A331 /* index.html */; };
+		B06D983B1DE0CFCB0078A331 /* Projector.js in Resources */ = {isa = PBXBuildFile; fileRef = B06D98351DE0CFCB0078A331 /* Projector.js */; };
+		B06D983C1DE0CFCB0078A331 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = B06D98361DE0CFCB0078A331 /* style.css */; };
+		B06D983D1DE0CFCB0078A331 /* three.js in Resources */ = {isa = PBXBuildFile; fileRef = B06D98371DE0CFCB0078A331 /* three.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		B06D981F1DE0CF0D0078A331 /* AnimationWebViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimationWebViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B06D98231DE0CF0D0078A331 /* AnimationWebViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationWebViewUITests.swift; sourceTree = "<group>"; };
 		B06D98251DE0CF0D0078A331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B06D98321DE0CFCB0078A331 /* animate.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = animate.js; path = AnimationWebRoot/animate.js; sourceTree = "<group>"; };
+		B06D98331DE0CFCB0078A331 /* canvasRender.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = canvasRender.js; path = AnimationWebRoot/canvasRender.js; sourceTree = "<group>"; };
+		B06D98341DE0CFCB0078A331 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = index.html; path = AnimationWebRoot/index.html; sourceTree = "<group>"; };
+		B06D98351DE0CFCB0078A331 /* Projector.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = Projector.js; path = AnimationWebRoot/Projector.js; sourceTree = "<group>"; };
+		B06D98361DE0CFCB0078A331 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = style.css; path = AnimationWebRoot/style.css; sourceTree = "<group>"; };
+		B06D98371DE0CFCB0078A331 /* three.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = three.js; path = AnimationWebRoot/three.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +109,7 @@
 		B06D98021DE0CF0D0078A331 /* AnimationWebView */ = {
 			isa = PBXGroup;
 			children = (
+				B06D98311DE0CF900078A331 /* AnimationWebRoot */,
 				B06D98031DE0CF0D0078A331 /* AppDelegate.swift */,
 				B06D98051DE0CF0D0078A331 /* ViewController.swift */,
 				B06D98071DE0CF0D0078A331 /* Main.storyboard */,
@@ -123,6 +136,19 @@
 				B06D98251DE0CF0D0078A331 /* Info.plist */,
 			);
 			path = AnimationWebViewUITests;
+			sourceTree = "<group>";
+		};
+		B06D98311DE0CF900078A331 /* AnimationWebRoot */ = {
+			isa = PBXGroup;
+			children = (
+				B06D98321DE0CFCB0078A331 /* animate.js */,
+				B06D98331DE0CFCB0078A331 /* canvasRender.js */,
+				B06D98341DE0CFCB0078A331 /* index.html */,
+				B06D98351DE0CFCB0078A331 /* Projector.js */,
+				B06D98361DE0CFCB0078A331 /* style.css */,
+				B06D98371DE0CFCB0078A331 /* three.js */,
+			);
+			name = AnimationWebRoot;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,8 +261,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B06D98391DE0CFCB0078A331 /* canvasRender.js in Resources */,
+				B06D983C1DE0CFCB0078A331 /* style.css in Resources */,
+				B06D98381DE0CFCB0078A331 /* animate.js in Resources */,
 				B06D980E1DE0CF0D0078A331 /* LaunchScreen.storyboard in Resources */,
+				B06D983A1DE0CFCB0078A331 /* index.html in Resources */,
+				B06D983D1DE0CFCB0078A331 /* three.js in Resources */,
 				B06D980B1DE0CF0D0078A331 /* Assets.xcassets in Resources */,
+				B06D983B1DE0CFCB0078A331 /* Projector.js in Resources */,
 				B06D98091DE0CF0D0078A331 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
